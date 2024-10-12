@@ -1,0 +1,80 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+.table {
+    --bs-table-bg: #ebab2669
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+.btn {
+    background-color: rgba(255, 200, 0, 0.62);
+    margin: 0 auto;
+    display : grid;
+}
+body {
+    background-image: url('/images/frietje.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    margin-bottom: 60px;
+}
+
+/* Stijl bij hover (als je over de knop heen gaat met de muis) */
+.btn:hover {
+    background-color: rgba(165, 165, 165, 1); /* Donkerdere gele achtergrondkleur bij hover */
+    color: #000; /* Zwarte tekst blijft hetzelfde bij hover */
+}
+
+.nav-link {
+    background-color: transparent;
+    color: #000; /* Zwarte tekst */
+    padding: 8px 15px; /* Binnenruimte voor de tekst */
+    border-radius: 4px; /* Ronde hoeken */
+    transition: background-color 0.3s ease; /* Zachte overgang bij hover */
+}
+
+    /* Hover effect voor links */
+    .nav-link:hover {
+        background-color: rgba(165, 165, 165, 1); /* Donkerdere geel bij hover */
+        color: #000; /* Tekstkleur blijft zwart */
+    }
+
+.action-link {
+    background-color: rgba(255, 200, 0, 0.62); /* Lichtgele achtergrondkleur */
+    color: #000; /* Zwarte tekstkleur */
+    padding: 5px 10px; /* Binnenruimte voor de tekst */
+    border-radius: 4px; /* Ronde hoeken */
+    text-decoration: none; /* Verwijdert de standaard onderstreping van links */
+    margin-right: 5px; /* Ruimte tussen de links */
+    transition: background-color 0.3s ease; /* Zachte overgang bij hover */
+}
+
+    /* Hover-effect voor actie-links */
+    .action-link:hover {
+        background-color: rgba(255, 160, 0, 2); /* Donkerdere geel bij hover */
+        color: #000; /* Zwarte tekst blijft bij hover */
+        text-decoration: none; /* Geen onderstreping bij hover */
+    }
+
+/* Specifieke stijl voor de Delete-link (rode kleur voor visuele waarschuwing) */
+.delete-link {
+    background-color: rgba(255, 30, 30, 0.6); /* Lichtrode achtergrondkleur voor delete */
+    color: #000; /* Witte tekst voor betere leesbaarheid */
+}
+
+.delete-link:hover {
+        background-color: rgba(255, 0, 0, 2); /* Donkerdere rood bij hover */
+    }
